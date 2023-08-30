@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from main.urls import urlpatterns
+from main import urls as murls
+from dictionary import urls as dicturls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(urlpatterns)),
+    # path('', include(murls.urlpatterns)),
+    path('', include(dicturls.urlpatterns)),
 ]
 
 if settings.DEBUG:

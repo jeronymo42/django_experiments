@@ -22,3 +22,893 @@ Traceback (most recent call last):
     return normpath(_getfullpathname(path))
 TypeError: _getfullpathname: path should be string, bytes or os.PathLike, not list
 "POST /upload HTTP/1.1" 500 100671
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 11, in words_list
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"GET /dictionary/words_list/ HTTP/1.1" 500 76075
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 11, in words_list
+    dictionary = json.loads(''.join(file.readlines()))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 2 (char 3)
+"GET /dictionary/words_list/ HTTP/1.1" 500 83746
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 13, in words_list
+    context = {'dictionary': dictionary}
+NameError: name 'dictionary' is not defined
+"GET /dictionary/words_list/ HTTP/1.1" 500 71048
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list
+"GET /dictionary/words_list/ HTTP/1.1" 500 85972
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 10, in words_list
+    with open('file') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'file'
+"GET /dictionary/words_list/ HTTP/1.1" 500 70742
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 10, in words_list
+    with open('file') as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'file'
+"GET /dictionary/words_list/ HTTP/1.1" 500 70742
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list
+"GET /dictionary/words_list/ HTTP/1.1" 500 85994
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86074
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86074
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 85937
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86074
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'dictionary/list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dictionary/list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86250
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'dictionary/list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dictionary/list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86250
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'dictionary/list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: dictionary/list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86742
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86544
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: list.html
+"GET /dictionary/words_list/ HTTP/1.1" 500 86544
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 14, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'dictionary.items()'
+"GET /dictionary/words_list/ HTTP/1.1" 500 150730
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: add_word() missing 2 required positional arguments: 'word1' and 'word2'
+"GET /dictionary/add_word/ HTTP/1.1" 500 67234
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 22, in add_word
+    return render(request, 'new_word.html')
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+"GET /dictionary/add_word/ HTTP/1.1" 500 121538
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+io.UnsupportedOperation: not readable
+"POST /dictionary/add_word/ HTTP/1.1" 500 72111
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 17, in add_word
+    with open("file", "rw", encoding="utf-8") as file:
+ValueError: must have exactly one of create/read/write/append mode
+"POST /dictionary/add_word/ HTTP/1.1" 500 72209
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77318
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77337
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77488
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77488
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77488
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77495
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(file.readlines())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+"POST /dictionary/add_word/ HTTP/1.1" 500 77477
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(''.join(file.readlines()))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"POST /dictionary/add_word/ HTTP/1.1" 500 84561
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(''.join(file.readlines()))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"POST /dictionary/add_word/ HTTP/1.1" 500 84564
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(''.join(file.readlines()))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"POST /dictionary/add_word/ HTTP/1.1" 500 84585
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    dictionary = json.loads(''.join(file.readlines()))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+"POST /dictionary/add_word/ HTTP/1.1" 500 84403
+Internal Server Error: /dictionary/add_word/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 18, in add_word
+    file.write(word1 + "-" + word2)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+"POST /dictionary/add_word/ HTTP/1.1" 500 71961
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 12, in words_list
+    file.write(word1 + "-" + word2)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+"POST /dictionary/words_list/ HTTP/1.1" 500 72475
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 12, in words_list
+    file.write(word1 + "-" + word2)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+"POST /dictionary/words_list/ HTTP/1.1" 500 72475
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 17, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 226, in render
+    raise ValueError(
+ValueError: Need 2 values to unpack in for loop; got 3. 
+"GET /dictionary/words_list/ HTTP/1.1" 500 116679
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 16, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 226, in render
+    raise ValueError(
+ValueError: Need 2 values to unpack in for loop; got 4. 
+"POST /dictionary/words_list/ HTTP/1.1" 500 118201
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 16, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 226, in render
+    raise ValueError(
+ValueError: Need 2 values to unpack in for loop; got 4. 
+"GET /dictionary/words_list/ HTTP/1.1" 500 117091
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 16, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 226, in render
+    raise ValueError(
+ValueError: Need 2 values to unpack in for loop; got 4. 
+"GET /dictionary/words_list/ HTTP/1.1" 500 117228
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 16, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\defaulttags.py", line 226, in render
+    raise ValueError(
+ValueError: Need 2 values to unpack in for loop; got 4. 
+"GET /dictionary/words_list/ HTTP/1.1" 500 117356
+Internal Server Error: /dictionary/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 8, in home
+    return render('base.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 143, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+"GET /dictionary/ HTTP/1.1" 500 129429
+Internal Server Error: /dictionary/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 8, in home
+    return render('base.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 143, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+"GET /dictionary/ HTTP/1.1" 500 129566
+Internal Server Error: /dictionary/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 8, in home
+    return render('base.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 143, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+"GET /dictionary/ HTTP/1.1" 500 129429
+Internal Server Error: /dictionary/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 8, in home
+    return render('base.html', cont)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 143, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+"GET /dictionary/ HTTP/1.1" 500 129554
+Internal Server Error: /dictionary/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 8, in home
+    return render(request, 'main.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1: 'endblock'. Did you forget to register or load this tag?
+"GET /dictionary/ HTTP/1.1" 500 150192
+Internal Server Error: /dictionary/words_list/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\dictionary\views.py", line 17, in words_list
+    return render(request, 'list.html', context)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 1: 'endblock'. Did you forget to register or load this tag?
+"GET /dictionary/words_list/ HTTP/1.1" 500 156038
