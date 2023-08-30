@@ -1,0 +1,24 @@
+Internal Server Error: /upload
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\maincourse\main\views.py", line 16, in upload_file
+    filename = fs.save(myfile.name, myfile)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\files\storage\base.py", line 77, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\files\storage\filesystem.py", line 165, in exists
+    return os.path.lexists(self.path(name))
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\files\storage\filesystem.py", line 179, in path
+    return safe_join(self.location, name)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\User\Desktop\Python_projects\Django\Simple\.venv\lib\site-packages\django\core\files\storage\filesystem.py", line 47, in location
+    return os.path.abspath(self.base_location)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ntpath.py", line 566, in abspath
+    return normpath(_getfullpathname(path))
+TypeError: _getfullpathname: path should be string, bytes or os.PathLike, not list
+"POST /upload HTTP/1.1" 500 100671
