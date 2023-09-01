@@ -18,13 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from main import urls as murls
+from notes import views as ntview
 from dictionary import urls as dicturls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include(murls.urlpatterns)),
     path('', include(dicturls.urlpatterns)),
+    path('reg/', ntview.register)
 ]
 
 if settings.DEBUG:

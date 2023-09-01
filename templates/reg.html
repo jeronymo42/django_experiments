@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div style="background-color: cadetblue;">
+    <form method="POST" action="" style="display: flex; flex-direction: column; margin: auto; max-width: 300px;">
+        <label for="username">Логин:</label>
+        <input required ="text" name="username">
+        <label for="first_name">Имя:</label>
+        <input required type="text" name="first_name">
+        <label for="last_name">Фамилия:</label>
+        <input required type="text" name="last_name">
+        <label for="email">email:</label>
+        <input required type="email" name="email">
+        <label for="password1">Пароль:</label>
+        <input required type="password" name="password1">
+        <label for="password2">Повторите пароль:</label>
+        <input required type="password" name="password2">
+        <br>
+        <input type="submit" value="Зарегистрироваться">
+        {% csrf_token %}
+    </form>
+
+</div>
+{% endblock %}
