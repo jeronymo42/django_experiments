@@ -13,3 +13,6 @@ def notes(request):
 
 def add_note(request):
     return render(request, 'add_note.html', {'title':'Добавить заметку'})
+
+def logout(request):
+    return render(request, 'logout.html')
