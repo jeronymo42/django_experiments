@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div style="width: 1200px; margin: auto; padding: 15px; color:whitesmoke; background-color: rgb(6, 6, 157);">
+    <form method="POST" action="" style="display: flex; flex-direction: column; margin: auto; max-width: 600px;">
+        <label for="note-text">Текст заметки:</label>
+        <textarea name="note-text" rows="5" cols="33">Вот такой вот выдался денёк...</textarea>
+        <br>
+        <input type="submit" value="Добавить">
+        {% csrf_token %}
+        <br>
+    </form>
+</div>
+{% endblock %}
