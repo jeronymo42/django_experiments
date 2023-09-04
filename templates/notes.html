@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<div style="width: 1200px; margin: auto; padding: 15px; color:whitesmoke; background-color: rgb(6, 6, 157);">
+    {% for note in notes %}
+    <p class="my-note" style="width: 1000px; margin: 10px auto; padding: 5px; color: rgb(6, 6, 157); background-color: whitesmoke; border: solid 5px; border-radius: 20px; border-color: rgb(208, 31, 179);">{{ note }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

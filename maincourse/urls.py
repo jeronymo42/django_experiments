@@ -26,7 +26,8 @@ urlpatterns = [
     # path('', include(murls.urlpatterns)),
     path('', include(dicturls.urlpatterns)),
     re_path('reg[/]?', ntview.register),
-    re_path('login[/]?', ntview.login)
+    re_path('login[/]?', ntview.login),
+    re_path('notes[/]?', ntview.notes)
 ]
 
 if settings.DEBUG:
