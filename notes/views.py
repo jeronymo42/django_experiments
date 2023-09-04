@@ -10,3 +10,6 @@ def login(request):
 def notes(request):
     note_list = ['Заметка 1', 'Заметка 2', 'Заметка 3', 'Заметка 4', 'Заметка 5']
     return render(request, 'notes.html', {'title':'Заметки', 'notes': note_list})
+
+def add_note(request):
+    return render(request, 'add_note.html', {'title':'Добавить заметку'})

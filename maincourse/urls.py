@@ -27,7 +27,8 @@ urlpatterns = [
     path('', include(dicturls.urlpatterns)),
     re_path('reg[/]?', ntview.register),
     re_path('login[/]?', ntview.login),
-    re_path('notes[/]?', ntview.notes)
+    re_path('notes[/]?', ntview.notes),
+    re_path('add_note[/]?', ntview.add_note)
 ]
 
 if settings.DEBUG:
